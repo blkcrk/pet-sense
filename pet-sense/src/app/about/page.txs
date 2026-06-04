@@ -1,0 +1,77 @@
+import Newsletter from "@/components/Newsletter";
+
+export default function About() {
+  return (
+    <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <h1 className="font-heading text-4xl font-bold text-sage-900 mb-8">
+        Our Story
+      </h1>
+
+      <div className="prose prose-sage max-w-none">
+        <div className="bg-brand-50 rounded-2xl p-8 mb-8 border border-brand-100">
+          <p className="text-lg text-sage-700 leading-relaxed italic">
+            &ldquo;I&apos;ve been a bulldog owner most of my life. Living in Phoenix with
+            two French Bulldogs and recently caring for a 16-year-old Lab mix
+            with mobility issues taught me that caring for sensitive pets isn&apos;t
+            just about love — it takes real knowledge and the right tools.&rdquo;
+          </p>
+        </div>
+
+        <h2 className="font-heading text-2xl font-bold text-sage-900 mt-8 mb-4">
+          Why This Site Exists
+        </h2>
+        <p className="text-sage-700 leading-relaxed mb-4">
+          When you own flat-faced dogs in one of the hottest cities in America,
+          you learn fast that most pet advice isn&apos;t written for you. The generic
+          &ldquo;make sure your dog has water&rdquo; tips don&apos;t cut it when pavement
+          temperatures hit 160°F and your Frenchie can&apos;t cool herself through
+          panting like other breeds can.
+        </p>
+        <p className="text-sage-700 leading-relaxed mb-4">
+          And when our senior Lab mix began losing mobility, I found myself
+          piecing together information from dozens of sources — vet visits,
+          forums, trial and error with products that mostly did not work.
+        </p>
+        <p className="text-sage-700 leading-relaxed mb-4">
+          This site is what I wish had existed: a single, trustworthy place for
+          owners of heat-sensitive, mobility-challenged, and senior pets to find
+          real advice, honest product reviews, and local resources.
+        </p>
+
+        <h2 className="font-heading text-2xl font-bold text-sage-900 mt-8 mb-4">
+          What We Cover
+        </h2>
+        <ul className="space-y-2 text-sage-700 mb-8">
+          <li>🌡️ <strong>Heat Safety</strong> — especially for brachycephalic breeds in extreme climates</li>
+          <li>🐾 <strong>Senior Pet Care</strong> — nutrition, pain management, quality of life</li>
+          <li>♿ <strong>Mobility Support</strong> — products, home modifications, and therapies</li>
+          <li>⭐ <strong>Honest Reviews</strong> — gear and products we&apos;ve actually used</li>
+          <li>📍 <strong>Phoenix Resources</strong> — local vets, groomers, and specialists who get it</li>
+        </ul>
+
+        <h2 className="font-heading text-2xl font-bold text-sage-900 mt-8 mb-4">
+          Meet the Dogs
+        </h2>
+        <p className="text-sage-700 leading-relaxed mb-8">
+          Everything on this site is shaped by hands-on experience with our own
+          pets. Our two French Bulldogs are the reason we obsess over heat
+          safety, and our late Lab mix is the reason we know more about
+          orthopedic beds and joint supplements than we ever expected to.
+        </p>
+        {/* Add your actual dog photos here */}
+        <div className="grid grid-cols-2 gap-4 mb-8">
+          <div className="bg-sage-100 rounded-xl h-64 flex items-center justify-center text-sage-400 text-6xl">
+            🐕
+          </div>
+          <div className="bg-sage-100 rounded-xl h-64 flex items-center justify-center text-sage-400 text-6xl">
+            🐕
+          </div>
+        </div>
+      </div>
+
+      <div className="mt-12">
+        <Newsletter variant="hero" />
+      </div>
+    </div>
+  );
+}
